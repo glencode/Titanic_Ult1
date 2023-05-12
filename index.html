@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Titanic Survival Prediction</title>
+  </head>
+  <body>
+    <h1>Titanic Survival Prediction</h1>
+    <form action="{{ url_for('predict') }}" method="post">
+      <label for="PassengerId">Passenger Id:</label>
+      <input type="text" name="PassengerId"><br><br>
+      <label for="Pclass">Pclass:</label>
+      <input type="text" name="Pclass"><br><br>
+      <label for="Age">Age:</label>
+      <input type="text" name="Age"><br><br>
+      <label for="SibSp">SibSp:</label>
+      <input type="text" name="SibSp"><br><br>
+      <label for="Parch">Parch:</label>
+      <input type="text" name="Parch"><br><br>
+      <label for="Fare">Fare:</label>
+      <input type="text" name="Fare"><br><br>
+      <label for="male">Male:</label>
+      <input type="radio" name="male" value="1">Yes
+      <input type="radio" name="male" value="0">No<br><br>
+      <label for="Q">Embarked Q:</label>
+      <input type="radio" name="Q" value="1">Yes
+      <input type="radio" name="Q" value="0">No<br><br>
+      <label for="S">Embarked S:</label>
+      <input type="radio" name="S" value="1">Yes
+      <input type="radio" name="S" value="0">No<br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
